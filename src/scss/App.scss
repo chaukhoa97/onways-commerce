@@ -1,0 +1,17 @@
+@import './Base/sanitize';
+@import '/node_modules/antd/dist/antd.css';
+@import './Base/utilities';
+@import './Base/variables';
+@import './Base/global';
+
+@import './Layout/header';
+
+@import './Components/button';
+@import './Components/address-card';
+@import './Components/carousel';
+
+@import './Pages/product';
+@import './Pages/login';
+@import './Pages/profile';
+@import './Pages/cart';
+@import './Pages/home';

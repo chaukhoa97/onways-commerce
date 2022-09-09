@@ -1,0 +1,7 @@
+.address-card {
+  cursor: pointer;
+
+  &--active {
+    border: 2px solid $kakitsubata-blue;
+  }
+}

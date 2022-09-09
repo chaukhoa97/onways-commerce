@@ -1,0 +1,157 @@
+.home {
+  h1 {
+    font-size: 72px;
+  }
+  h2 {
+    font-size: 48px;
+  }
+  h3 {
+    font-size: 36px;
+  }
+  p {
+    font-size: 24px;
+  }
+  .btn {
+    font-size: 20px;
+  }
+}
+
+.hero {
+  height: calc(100vh - 64px);
+  display: flex;
+
+  .hero__left,
+  .hero__right {
+    background-position: center top;
+    background-size: cover;
+    height: 100%;
+    opacity: 0.7;
+    &:hover {
+      opacity: 1;
+    }
+    transition: opacity 0.35s ease-in-out;
+  }
+
+  &__left {
+    background-image: url('https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80');
+  }
+
+  &__right {
+    background-image: url('https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=720&q=80');
+  }
+
+  &__content {
+    margin: 0 30px;
+    position: relative;
+    top: 50%;
+    text-align: center;
+    h1,
+    p {
+      color: $white;
+    }
+  }
+
+  .ant-row {
+    width: 100%;
+  }
+}
+
+.countdown {
+  background-image: url('https://images.unsplash.com/photo-1512389142860-9c449e58a543?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1738&q=80');
+  background-position: center center;
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  h3 {
+    color: $dark-grey;
+  }
+  text-align: center;
+
+  &__content {
+    width: 46%;
+    position: relative;
+    top: 44%;
+    transform: translateY(-50%);
+  }
+}
+
+.features {
+  background-color: $bright-star;
+  height: 300px;
+
+  .feature {
+    p {
+      font-size: 20px;
+    }
+  }
+
+  .ant-divider-vertical {
+    height: 6em;
+    margin: 0 20px;
+    border-left: 2px solid $black;
+  }
+}
+
+.discover {
+  &__item {
+    cursor: pointer;
+
+    &:hover {
+      img {
+        transform: scale(1.1);
+        transition: all 0.3s;
+      }
+    }
+  }
+}
+
+//! Responsive
+@media screen and (max-width: 992px) {
+  .home {
+    h1 {
+      font-size: 48px;
+    }
+    h2 {
+      font-size: 36px;
+    }
+    h3 {
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    .btn {
+      font-size: 14px;
+    }
+  }
+
+  .hero {
+    &__content {
+      top: 20%;
+      margin: 0 10px;
+    }
+  }
+
+  .countdown {
+    &__content {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .ant-statistic-content-value {
+      font-size: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .countdown {
+    &__content {
+      width: 86%;
+    }
+  }
+}

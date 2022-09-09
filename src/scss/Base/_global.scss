@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap');
+@import './variables';
+*,
+.roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  font-size: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.mont {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.price {
+  color: $kakitsubata-blue;
+  font-weight: bold;
+
+  &::before {
+    content: '$';
+  }
+}
+
+.ant-layout {
+  background: $deutzia-white;
+}
+
+.bg-white {
+  background-color: $white !important;
+}
+
+.ant-descriptions-item-label,
+.ant-descriptions-item-content {
+  text-align: center;
+}
+
+.ant-descriptions-title,
+.ant-page-header-heading-title {
+  font-size: 2rem;
+  color: $kakitsubata-blue;
+}
+
+.error {
+  color: $blood-burst;
+}
+
+.mt-6 {
+  margin-top: 6rem;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+body {
+  height: 100vh;
+}
